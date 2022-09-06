@@ -4,7 +4,7 @@ fn main() {
     println!("{result}");
 }
 
-fn first_word(s: &String) -> usize {
+fn first_word(s: &str) -> usize {
     // my version
     // let mut count = 0;
 
@@ -28,7 +28,7 @@ fn first_word(s: &String) -> usize {
     s.len()
 }
 
-fn first_word2(s: &String) -> &str {
+fn first_word2(s: &str) -> &str {
     let bytes = s.as_bytes();
 
     for (index, &item) in bytes.iter().enumerate() {
